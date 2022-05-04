@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Instantiate : MonoBehaviour
 {
+    public GameObject cubo;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +15,10 @@ public class Instantiate : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void InstanciarGameObj()
+    {
+        Instantiate(cubo);
     }
 }
